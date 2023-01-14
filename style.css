@@ -1,17 +1,18 @@
+@media screen and (min-width: 900px) and (max-width:1600px){
 body{
     margin: 40px;
     background: linear-gradient(to right, rgb(98, 98, 239) , rgb(174, 218, 233));
 }
 .entire-body{
     display: grid;
-    grid-template-columns: repeat(3, 25%);
-    margin-left: 130px;
+    grid-template-columns: repeat(3, 30%);
+    margin-left: 100px;
 }
 .box-model{
-    height: 550px;
+    width: auto;
+    height: 100%;
     border-radius: 20px;
     background-color: white;
-    transition: all 0.2s;
     margin: 20px;
 }
 .objectsection{
@@ -64,10 +65,73 @@ body{
 button:hover{
     background-color: rgb(27, 88, 241);
 }
-@media screen and (min-width: 400px) and (max-width:800px) {
-.entire-body{
-    display: grid;
-    grid-template-columns: repeat(1, 80%);
-    margin-left: 130px;
 }
+@media screen and (min-width: 300px) and (max-width:800px) {
+    body{
+        margin: 0px;
+        background: linear-gradient(to right, rgb(98, 98, 239) , rgb(174, 218, 233));
+    }
+    .entire-body{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+       
+        margin: 0p;
+    }
+    .box-model{
+        height: 550px;
+        border-radius: 20px;
+        background-color: white;
+       
+        margin: 10px;
+    }
+    .objectsection{
+        display: flex;
+        justify-content: center;
+        opacity: 0.55;
+        color: rgb(60, 57, 57);
+        margin: 5px;
+    }
+    .price-per-month{
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        margin: 2px;
+    }
+    .smaller-text{
+        font-size: 12px;
+        margin-top: 35px;
+    }
+    .line{
+        margin-left: 10%;
+        width: 80%;
+        border: 1px solid #aca0a0;
+    }
+    .tickmark{
+        list-style-type: '\2713';
+    }
+    .common{
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .wrongmark{
+        list-style-type: 'X';
+    }
+    .uncommon{
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 300;
+        opacity: 0.55;
+    }
+    .payment-option{
+        margin-left: 10%;
+        width: 80%;
+        height: 40px;
+        border-radius: 40px;
+        background-color: rgb(31, 180, 221);
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(27, 88, 241);
+    }
 }
